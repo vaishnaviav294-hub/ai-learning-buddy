@@ -3,6 +3,7 @@ from groq import Groq
 from dotenv import load_dotenv
 import os
 import sqlite3
+import re
 
 
 # Load API key
