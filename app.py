@@ -197,31 +197,10 @@ with col2:
 
 with col3:
 
-    if len(scores) > 0:
-
-        total_score = sum(
-            item[0] for item in scores
-        )
-
-        total_questions = sum(
-            item[1] for item in scores
-        )
-
-        average = int(
-            (total_score / total_questions) * 100
-        )
-
-        st.metric(
-            "Average Quiz Score",
-            f"{average}%"
-        )
-
-    else:
-
-        st.metric(
-            "Average Quiz Score",
-            "0%"
-        )
+    st.metric(
+        "Learning Activities",
+        5
+    )
 
 
 
