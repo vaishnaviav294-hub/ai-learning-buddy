@@ -6,12 +6,16 @@ import sqlite3
 
 
 # Load API key
-
 load_dotenv()
 
 api_key = os.getenv("GROQ_API_KEY")
 
+# If not found in .env, use Streamlit Secrets
+if not api_key:
+    api_key = st.secrets["GROQ_API_KEY"]
+
 client = Groq(api_key=api_key)
+
 
 
 
